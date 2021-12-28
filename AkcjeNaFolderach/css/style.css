@@ -1,8 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     width: 100%;
     height: 100vh;
     background-color: #042059;
 }
+
 .box{
     height: 30%;
     display : grid;
@@ -12,14 +17,123 @@ body{
 
     place-items: center;
 }
+.box-menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display:grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-auto-rows:auto;
+
+    width: 100%;
+    height: 100%;
+    font-size:26px;
+
+}
+.box-menu>a{
+    display: grid;
+    place-items:center;
+
+    text-align: center;
+    text-decoration: none;
+    color: rgb(161, 158, 158);
+   
+    width: 60%;
+    height: 70%;
+
+    background-color: #053C63;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(233, 10, 10, 0.25); 
+
+    transition-property: width, color;
+    transition-duration: 0.7s, 0.5s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+.box-menu>a>p{
+    margin: 0;
+}
+.box-menu>a:hover{
+    width: 70%;
+    color: rgb(255, 255, 255);
+}
+.box-inst{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display:grid;
+    grid-template-columns:[col1] 20% [col2] 2fr [col3] 20% ;
+    grid-auto-rows: 40% 60%;
+    place-items: center;
+
+    width: 80%;
+    height: 80%;
+
+    color: rgb(161, 158, 158);
+    border-radius: 10px;
+    background-color: #053C63;  
+    box-shadow: 5px 10px 10px rgba(253, 0, 0, 0.25);
+
+    transition-property: width, color;
+    transition-duration: 1s, 1s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+
+}
+.box-inst>b{
+    text-align: center;
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+    font-size:35px;
+}
+.box-inst>ol{
+    width: 100%;
+    height: 100%;
+
+    place-items: center;
+    display: grid;
+
+    grid-column-start:2;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.box-inst>ol>li{
+    display:grid;
+    place-items: center;
+    list-style: none;
+    
+    font-size:26px;
+    
+
+    width: 50%;
+    height: 80%;
+
+    background-color: #042059;  
+    border-radius: 10px;
+}
+.box-inst:hover{
+    color: white;
+    width: 90%;
+}
 .box-form{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+
     width: 100%;
     height: 100%;
 
+    border-radius: 10px;
     background-color: #053C63;  
     box-shadow: 5px 10px 10px rgba(253, 0, 0, 0.25);
 }

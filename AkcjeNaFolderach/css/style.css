@@ -1,0 +1,122 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #042059;
+}
+.box{
+    height: 30%;
+    display : grid;
+    grid-template-columns:[col1] 1fr [col2] 2fr [col3] 1fr ;
+    grid-auto-rows: 100%;
+    gap: 5% 5%;
+
+    place-items: center;
+}
+.box-form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+
+    background-color: #053C63;  
+    box-shadow: 5px 10px 10px rgba(253, 0, 0, 0.25);
+}
+.grid-in{
+    display : grid;
+    grid-template-columns:[col1] 1fr [col2] auto [col3] 1fr ;
+    grid-auto-rows: auto;
+
+    width: 100%;
+    height: 100%;
+
+    place-items: center;
+}
+
+.btn1{ 
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    width: 50%;
+    height: 50%;
+
+    border: 4px solid rgb(16, 71, 33);
+    border-radius: 10px;
+    color: white;
+    font-size:100%;
+    background: rgb(50, 121, 50); 
+    opacity: 1;
+
+    transition-property: width, height;
+    transition-duration: 0.7s, 0.5s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+.btn1:hover{
+    opacity: 0.5;
+    width: 60%;
+    height: 60%;
+}
+
+.btn2{ 
+    grid-column-start: 3;
+    grid-column-end: 3;
+    width: 50%;
+    height: 50%;
+
+    border: 4px solid rgb(94, 41, 41);
+    border-radius: 10px;
+    color: white;
+    font-size:100%;
+    background: rgb(128, 77, 77);
+
+    opacity: 1;
+
+    transition-property: opacity, width, height;
+    transition-duration: 1.5s, 1s, 1s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay:0s, 0s, 0s;
+}
+.btn2:hover{
+    opacity: 0.5;
+    width: 60%;
+    height: 60%;
+}
+
+.box-wysw{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    display: grid;
+    place-items: center;
+
+    width: 50%;
+    height: 70%;
+    
+    background-color:#310663 ;
+    box-shadow: 5px 10px 10px rgba(38, 6, 51, 0.25);
+    border-radius: 10px;
+
+    
+    color: bisque;
+    text-align: center;
+
+    font-size:24px;
+    transition-property: width, height, font-size;
+    transition-duration: 1s, 1s, 1s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+}
+
+.box-wysw:hover{  
+    background-color:#3e265a ;
+    color: wheat;
+    width: 55%;
+    height: 75%;
+    font-size:30px;
+}
+
+
